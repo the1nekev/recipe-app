@@ -1,7 +1,25 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
+  <style>
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  </style>
   <title>Recipe App Home</title>
   <body>
     <h1 style="text-align: center">Welcome to our Recipe-App</h1>
+    <br />
+    <img
+      src="{% static 'recipes/images/recipes_welcome.jpg' %}"
+      alt="home"
+      width="600"
+      height="300"
+      class="center"
+    />
   </body>
 </html>

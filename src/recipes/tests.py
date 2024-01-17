@@ -22,3 +22,7 @@ class RecipesModelTest(TestCase):
         recipe = Recipes.objects.get(id=1)
         recipe_cookingtime = recipe._meta.get_field('cooking_time').help_text
         self.assertEqual(recipe_cookingtime, 'In minutes')
+    
+    def test_get_absolute_url(self):
+        recipe = Recipes.objects.get(id=1)
+        self.assertEqual(recipe.get_absolute_url(), '/list/1')

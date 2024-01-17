@@ -1,0 +1,14 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <title>Detail View</title>
+  <body>
+    <h2>Details: {{object.name}}</h2>
+    <b>Name:</b> {{object.name}} <br />
+    <b>Prep Time (Minutes):</b> {{object.cooking_time}} <br />
+    <b>Ingredients:</b> {{object.ingredients}} <br />
+    <b>Description:</b> {{object.description}} <br />
+    <img src="{{object.pic.url}}" width="200" height="300" />
+  </body>
+</html>
