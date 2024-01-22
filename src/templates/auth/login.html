@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- basic HTML design -->
+<html>
+  <title>Recipe App</title>
+  <style></style>
+  <body>
+    <div class="container">
+      <div class="item">
+        <h1>Welcome to the Recipe App!</h1>
+        <br />
+        <div>
+          {% if error_message %} {{error_message}} {% endif %}
+          <form action="" method="POST">
+            {% csrf_token %} {{form}}
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
